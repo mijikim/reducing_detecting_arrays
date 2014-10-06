@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-require 'students'
+require 'students_miji'
 
 describe Students do
   let(:students) { Students.new }
@@ -44,7 +44,7 @@ describe Students do
     expect(actual).to eq(nil)
 
   end
-
+  #
   it 'can determine if a specific student is present' do
     expect(students.student_present?({name: "Sue", age: 10})).to eq true
 
